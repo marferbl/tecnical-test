@@ -26,6 +26,7 @@ const App = () => {
     }
   };
   const sendInput = (e) => {
+    console.log(inputValue);
     clearAll();
   };
 
