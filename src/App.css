@@ -24,6 +24,14 @@ button {
   display: flex;
   justify-content: center;
   margin-bottom: 2rem;
+  position: relative;
+}
+.separator {
+  position: absolute;
+  left: 50%;
+  height: 100%;
+  width: 2px;
+  background-color: rgba(0, 0, 0, 0.123);
 }
 .nav-buttons button {
   margin: 0 2rem;

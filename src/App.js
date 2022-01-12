@@ -9,6 +9,8 @@ const App = () => {
     handleActive();
   }, []);
 
+  // BORDER ARRIBA
+
   useEffect(() => {
     checkAs();
   }, [inputValue]);
@@ -20,9 +22,9 @@ const App = () => {
 
   const checkAs = () => {
     if (inputValue.toLowerCase().includes("a")) {
-      document.querySelector("main").style.background = "green";
+      document.querySelector("input").style.background = "green";
     } else {
-      document.querySelector("main").style.background = "inherit";
+      document.querySelector("input").style.background = "inherit";
     }
   };
   const sendInput = (e) => {
@@ -32,7 +34,7 @@ const App = () => {
 
   const clearAll = () => {
     document.querySelector("input").value = "";
-    document.querySelector("main").style.background = "inherit";
+    document.querySelector("input").style.background = "inherit";
   };
   const checkSides = () => {
     if (buttonSide == "left") {
@@ -52,11 +54,12 @@ const App = () => {
     <div className="App">
       <div className="nav-buttons">
         <button className=" left-button" onClick={handleActive}>
-          Active
+          {buttonSide === "right" ? "Active" : "Inactive"}
         </button>
         <button className=" right-button" onClick={handleActive}>
-          Inactive
+          {buttonSide === "left" ? "Active" : "Inactive"}
         </button>
+        <div className="separator"></div>
       </div>
       <main>
         <div className="form-container">
