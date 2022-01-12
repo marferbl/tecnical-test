@@ -9,8 +9,6 @@ const App = () => {
     handleActive();
   }, []);
 
-  // BORDER ARRIBA
-
   useEffect(() => {
     checkAs();
   }, [inputValue]);
