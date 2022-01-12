@@ -1,3 +1,7 @@
+Tecnical test for FlyKube.
+Creation of a single component app (as required) with styles and functions with react.
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
