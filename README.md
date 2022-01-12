@@ -1,4 +1,4 @@
-Tecnical text for FlyKube.
+Tecnical test for FlyKube.
 Creation of a single component app (as required) with styles and functions with react.
 
 
