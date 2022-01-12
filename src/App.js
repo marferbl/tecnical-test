@@ -37,7 +37,7 @@ const App = () => {
     document.querySelector("input").style.background = "inherit";
   };
   const checkSides = () => {
-    if (buttonSide == "left") {
+    if (buttonSide === "left") {
       document.querySelector(".left-button").classList.add("active");
       document.querySelector(".right-button").classList.remove("active");
     } else {
